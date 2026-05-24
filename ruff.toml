@@ -1,0 +1,11 @@
+[lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = ["E501", "B008"]
+
+[lint.per-file-ignores]
+"tests/*" = ["D"]
+"gui/*" = ["D"]
+
+[format]
+quote-style = "double"
+indent-style = "space"
