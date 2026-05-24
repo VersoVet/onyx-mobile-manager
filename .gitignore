@@ -1,6 +1,8 @@
 *.pyc
 __pycache__/
 .env
+*.env
+.env.*
 *.key
 secrets*
 *.egg-info/
@@ -9,8 +11,18 @@ build/
 .mypy_cache/
 .ruff_cache/
 .pytest_cache/
+.venv/
+venv/
+env/
 data/*.db
 data/*.sqlite
 *.apk
 *.pem
 credentials*
+.DS_Store
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.log
