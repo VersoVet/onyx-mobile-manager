@@ -1,0 +1,21 @@
+{
+    "strategy": "active",
+    "entries": [
+        {
+            "data_type": "config_files",
+            "paths": [
+                "/opt/onyx/skills/onyx-mobile-manager/config/"
+            ],
+            "criticality": "medium",
+            "description": "Configuration onyx-mobile-manager"
+        },
+        {
+            "data_type": "generated_files",
+            "paths": [
+                "/opt/onyx/skills/onyx-mobile-manager/data/"
+            ],
+            "criticality": "low",
+            "description": "Donn\u00e9es onyx-mobile-manager"
+        }
+    ]
+}

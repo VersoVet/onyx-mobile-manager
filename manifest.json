@@ -7,7 +7,14 @@
     "status": "dev",
     "category": "infrastructure",
     "brain_area": "cerebellum",
-    "tags": ["mobile", "device-management", "android", "vpn", "adb", "apk"],
+    "tags": [
+      "mobile",
+      "device-management",
+      "android",
+      "vpn",
+      "adb",
+      "apk"
+    ],
     "routing": {
       "host": "0.0.0.0",
       "port": 8095,
@@ -16,19 +23,71 @@
     "api": {
       "base_path": "/api",
       "endpoints": [
-        {"method": "GET", "path": "/api/devices", "description": "Liste tous les appareils"},
-        {"method": "POST", "path": "/api/devices", "description": "Enregistrer un appareil"},
-        {"method": "PUT", "path": "/api/devices/{id}", "description": "Modifier un appareil"},
-        {"method": "DELETE", "path": "/api/devices/{id}", "description": "Supprimer un appareil"},
-        {"method": "PATCH", "path": "/api/devices/{id}/status", "description": "Mettre a jour le statut"},
-        {"method": "GET", "path": "/api/history", "description": "Historique complet"},
-        {"method": "GET", "path": "/api/history/{device_id}", "description": "Historique d'un appareil"},
-        {"method": "POST", "path": "/api/history", "description": "Logger une action"},
-        {"method": "GET", "path": "/api/history/export", "description": "Export CSV/JSON"},
-        {"method": "GET", "path": "/api/apk", "description": "Liste APKs disponibles"},
-        {"method": "POST", "path": "/api/apk/upload", "description": "Upload un APK"},
-        {"method": "GET", "path": "/api/apk/{name}/download", "description": "Download APK"},
-        {"method": "DELETE", "path": "/api/apk/{name}", "description": "Supprimer un APK"}
+        {
+          "method": "GET",
+          "path": "/api/devices",
+          "description": "Liste tous les appareils"
+        },
+        {
+          "method": "POST",
+          "path": "/api/devices",
+          "description": "Enregistrer un appareil"
+        },
+        {
+          "method": "PUT",
+          "path": "/api/devices/{id}",
+          "description": "Modifier un appareil"
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/devices/{id}",
+          "description": "Supprimer un appareil"
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/devices/{id}/status",
+          "description": "Mettre a jour le statut"
+        },
+        {
+          "method": "GET",
+          "path": "/api/history",
+          "description": "Historique complet"
+        },
+        {
+          "method": "GET",
+          "path": "/api/history/{device_id}",
+          "description": "Historique d'un appareil"
+        },
+        {
+          "method": "POST",
+          "path": "/api/history",
+          "description": "Logger une action"
+        },
+        {
+          "method": "GET",
+          "path": "/api/history/export",
+          "description": "Export CSV/JSON"
+        },
+        {
+          "method": "GET",
+          "path": "/api/apk",
+          "description": "Liste APKs disponibles"
+        },
+        {
+          "method": "POST",
+          "path": "/api/apk/upload",
+          "description": "Upload un APK"
+        },
+        {
+          "method": "GET",
+          "path": "/api/apk/{name}/download",
+          "description": "Download APK"
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/apk/{name}",
+          "description": "Supprimer un APK"
+        }
       ]
     }
   },
